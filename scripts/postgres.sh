@@ -23,6 +23,7 @@ create_user () {
         fi
 
         echo 'CREATE EXTENSION pgcrypto; CREATE EXTENSION "uuid-ossp";' | psql -d $SCHEMA
+        echo 'CREATE EXTENSION pgcrypto; CREATE EXTENSION "uuid-ossp";' | psql -d template1
 
         rm /var/tmp/firstrun
     fi
